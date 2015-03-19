@@ -19,6 +19,11 @@
         <thucydides.version>0.9.268</thucydides.version>
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
+		
+		<properties>
+        <!-- Input Parameter - GlassFish properties file -->
+        <glassfish.properties.file.argument></glassfish.properties.file.argument>
+    </properties>
     </properties>
 
     <scm>
@@ -164,6 +169,30 @@
                         </storyReport>
                     </configuration>
                 </plugin>
+				
+				<plugin>
+                <groupId>org.glassfish.maven.plugin</groupId>
+                <artifactId>maven-glassfish-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <glassfishDirectory>${GLASSFISH_HOME}</glassfishDirectory>
+                    <user>${glassfish.user}</user>
+                    <echo>true</echo>
+                    <debug>true</debug>
+                    <terse>true</terse>
+                    <domain>
+                        <name>${glassfish.domain}</name>
+                        <host>${glassfish.host}</host>
+                        <adminPort>${glassfish.adminport}</adminPort>
+                    </domain>
+                    <components>
+                        <component>
+                            <name>${project.artifactId}</name>
+                            <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
+                        </component>
+                    </components>
+                </configuration>  
+            </plugin>
 
             </plugins>
         </pluginManagement>
