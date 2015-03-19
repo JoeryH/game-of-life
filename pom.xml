@@ -197,7 +197,7 @@
                     <components>
                         <component>
                             <name>gameoflife-web</name>
-                            <artifact>gameoflife-web/gameoflife.war</artifact>
+                            <artifact>gameoflife-web/target/gameoflife.war</artifact>
                         </component>
                     </components>
                 </configuration>  
