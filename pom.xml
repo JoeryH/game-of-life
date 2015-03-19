@@ -19,11 +19,8 @@
         <thucydides.version>0.9.268</thucydides.version>
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
-		
-		<properties>
         <!-- Input Parameter - GlassFish properties file -->
         <glassfish.properties.file.argument></glassfish.properties.file.argument>
-    </properties>
     </properties>
 
     <scm>
