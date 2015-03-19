@@ -185,7 +185,7 @@
                 <configuration>
                     <glassfishDirectory>${GLASSFISH_HOME}</glassfishDirectory>
                     <user>${glassfish.user}</user>
-					<adminPassword>admin</adminPassword>
+					<passwordFile>${GLASSFISH_HOME}\domains\${glassfish.domain}\config\domain-passwords</passwordFile>
                     <echo>true</echo>
                     <debug>true</debug>
                     <terse>true</terse>
