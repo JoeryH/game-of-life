@@ -196,8 +196,8 @@
                     </domain>
                     <components>
                         <component>
-                            <name>${project.artifactId}</name>
-                            <artifact>${project.build.directory}/${project.build.finalName}.war</artifact>
+                            <name>gameoflife-web</name>
+                            <artifact>gameoflife-web/gameoflife.war</artifact>
                         </component>
                     </components>
                 </configuration>  
