@@ -185,6 +185,7 @@
                 <configuration>
                     <glassfishDirectory>${GLASSFISH_HOME}</glassfishDirectory>
                     <user>${glassfish.user}</user>
+					<adminPassword></adminPassword>
                     <echo>true</echo>
                     <debug>true</debug>
                     <terse>true</terse>
